@@ -1,6 +1,6 @@
 const HomePage = () => {
   return (
-    <div className="h-[100vh]">
+    <div className="w-/9/12 h-[80vh] ">
       <h1>this it home page</h1>
     </div>
   );
