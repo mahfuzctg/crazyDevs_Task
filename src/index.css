@@ -1,64 +1,87 @@
-@import "tailwindcss";
+@import "tailwindcss"; /* Import TailwindCSS for utility-first styling */
 
-/* Global Styles */
+/* 
+  🌍 Global Styles 
+  Define root variables for consistent theming across the project.
+*/
 :root {
-  --bg-frame-bg: #242424;
-  --text-primary: #ffffff;
-  --text-secondary: #cccccc;
-  --btn-bg: #ff9800;
-  --btn-hover-bg: #e68900;
-  --card-bg: #333333;
-  --section-bg: #1e1e1e;
-  --container-bg: #2a2a2a;
-  --border-color: #444444;
-  --font-primary: "Inter", sans-serif;
-  --font-secondary: "Roboto", sans-serif;
+  --bg-frame-bg: #242424; /* Main background color */
+  --text-primary: #ffffff; /* Primary text color (white) */
+  --text-secondary: #cccccc; /* Secondary text color (light gray) */
+  --btn-bg: #ff9800; /* Button background color (orange) */
+  --btn-hover-bg: #e68900; /* Button hover background color (darker orange) */
+  --card-bg: #333333; /* Card background color (dark gray) */
+  --section-bg: #1e1e1e; /* Section background color (darker gray) */
+  --container-bg: #2a2a2a; /* Container background color */
+  --border-color: #444444; /* Border color (medium gray) */
+  --font-primary: "Inter", sans-serif; /* Primary font for text */
+  --font-secondary: "Roboto", sans-serif; /* Secondary font for special text */
+  --dot-color: rgba(
+    255,
+    255,
+    255,
+    0.08
+  ); /* Subtle dotted effect in backgrounds */
 }
 
+/* 🌟 Base Styles for the Body */
 body {
-  background: var(--bg-frame-bg);
-  color: var(--text-primary);
-  font-family: var(--font-primary);
+  background: var(--bg-frame-bg); /* Set background color */
+  color: var(--text-primary); /* Set text color */
+  font-family: var(--font-primary); /* Apply primary font */
 }
 
-/* Buttons */
+/* 🎨 Buttons */
 .btn {
-  background-color: var(--btn-bg);
-  color: var(--text-primary);
-  padding: 10px 16px;
-  border-radius: 6px;
-  transition: background 0.3s ease;
+  background-color: var(--btn-bg); /* Default button color */
+  color: var(--text-primary); /* Text color */
+  padding: 10px 16px; /* Padding for size */
+  border-radius: 6px; /* Rounded corners */
+  transition: background 0.3s ease; /* Smooth transition on hover */
 }
 
+/* 🔥 Button Hover Effect */
 .btn:hover {
-  background-color: var(--btn-hover-bg);
+  background-color: var(--btn-hover-bg); /* Darker color when hovered */
 }
 
-/* Cards */
+/* 📦 Cards */
 .card {
-  background-color: var(--card-bg);
-  padding: 16px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  background-color: var(--card-bg); /* Background color */
+  padding: 16px; /* Spacing inside the card */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
 }
 
-/* Sections */
+/* 📌 Sections */
 .section {
-  background-color: var(--section-bg);
-  padding: 40px 20px;
-  border-radius: 8px;
+  background-color: var(--section-bg); /* Background color for sections */
+  padding: 40px 20px; /* Spacing inside sections */
+  border-radius: 8px; /* Rounded corners */
 }
 
-/* Containers */
+/* 📏 Containers */
 .container {
-  background-color: var(--container-bg);
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+  background-color: var(--container-bg); /* Background color */
+  max-width: 1200px; /* Set maximum width */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Padding inside container */
 }
 
-/* Div Styling */
+/* 🔳 Generic Div Styling */
 div {
-  border-radius: 4px;
-  padding: 8px;
+  border-radius: 4px; /* Rounded corners */
+  padding: 8px; /* Internal spacing */
+}
+
+/* 🎯 Dotted Background with Hero Image */
+.main_dotted_bg {
+  background: radial-gradient(circle, var(--dot-color) 1px, transparent 1px),
+    /* Dotted pattern */ var(--bg-frame-bg) url("/src/assets/Hero.png"); /* Background image */
+  background-size: 8px 8px, cover; /* Dot spacing + image covering full area */
+  background-position: center; /* Center the image */
+  background-repeat: repeat, no-repeat; /* Repeat dots, no image repetition */
+  color: var(--text-primary); /* Text color for elements inside */
+  font-family: var(--font-primary); /* Apply primary font */
+  border-radius: 10;
 }

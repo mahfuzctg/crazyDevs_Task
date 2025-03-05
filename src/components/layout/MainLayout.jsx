@@ -10,7 +10,7 @@ const MainLayout = () => {
       </div>
 
       {/* Main content */}
-      <div className="w-4/5 p-4">
+      <div className="w-4/5 p-4 main_dotted_bg">
         {/* Main content goes here */}
         <HomePage></HomePage>
       </div>
