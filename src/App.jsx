@@ -1,12 +1,10 @@
-import "./App.css";
-import { Button } from "./components/ui/button";
+import MainLayout from "./components/layout/mainLayout";
 
 function App() {
   return (
-    <>
-      <h1 className="text-red-500">Test for tailwind</h1>
-      <Button>Shadcn</Button>
-    </>
+    <div className="max-w-7xl mx-auto bg-[#2B2B2B] ">
+      <MainLayout></MainLayout>
+    </div>
   );
 }
 
