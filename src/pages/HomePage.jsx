@@ -1,5 +1,6 @@
 import UploadCard from "@/components/card/UploadCard";
 import HomeHeadTitle from "@/components/header/HomeHeadTitle";
+import HomeSubTItle from "@/components/header/HomeSubTItle";
 import HomeTitle from "@/components/header/HomeTitle";
 
 const HomePage = () => {
@@ -10,10 +11,10 @@ const HomePage = () => {
         <HomeHeadTitle />
       </div>
       {/* Home title is here */}
-      <>
-        <HomeTitle />
-      </>
 
+      <HomeTitle />
+      {/* Home Sub Title */}
+      <HomeSubTItle />
       {/* Home upload cards here */}
       <div className="grid grid-cols-2">
         <UploadCard />
