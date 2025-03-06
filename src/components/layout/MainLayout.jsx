@@ -5,7 +5,7 @@ const MainLayout = () => {
   return (
     <div className="flex">
       {/* Sidebar */}
-      <div className="w-1/5  text-white p-4">
+      <div className="w-[25%]">
         {/* Sidebar content goes here */}
         <Sidebar></Sidebar>
       </div>

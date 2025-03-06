@@ -2,7 +2,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 
 const AvatarWithInfo = () => {
   return (
-    <div className="flex justify-around items-center">
+    <div className="flex justify-between items-center">
       <div className="flex items-center">
         <div>
           <Avatar>

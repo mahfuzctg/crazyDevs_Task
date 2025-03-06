@@ -5,7 +5,7 @@ import GenericCard from "../reuseable/GenericCard";
 
 const Sidebar = () => {
   return (
-    <div className="min-h-screen">
+    <>
       {/* sidebar logo and icons */}
       <SiteLogoAndIcons />
 
@@ -29,7 +29,7 @@ const Sidebar = () => {
 
       {/* Avatar with info */}
       <AvatarWithInfo />
-    </div>
+    </>
   );
 };
 
