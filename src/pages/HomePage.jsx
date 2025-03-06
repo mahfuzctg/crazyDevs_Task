@@ -1,3 +1,4 @@
+import HomeBottomBtn from "@/components/btn/HomeBottomBtn";
 import UploadCard from "@/components/card/UploadCard";
 import HomeHeadTitle from "@/components/header/HomeHeadTitle";
 import HomeSubTItle from "@/components/header/HomeSubTItle";
@@ -19,6 +20,9 @@ const HomePage = () => {
       <div className="grid grid-cols-2">
         <UploadCard />
       </div>
+
+      {/* Home start or demo btn */}
+      <HomeBottomBtn />
     </div>
   );
 };
