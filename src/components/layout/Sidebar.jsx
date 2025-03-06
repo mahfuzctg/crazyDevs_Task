@@ -1,4 +1,5 @@
 import SiteLogoAndIcons from "../header/SiteLogoAndIcons";
+import AvatarWithInfo from "../profile/AvatarWithInfo";
 import BtnRounded from "../reuseable/BtnRounded";
 import GenericCard from "../reuseable/GenericCard";
 
@@ -25,6 +26,9 @@ const Sidebar = () => {
 
       {/* sidebar bottom card */}
       <GenericCard />
+
+      {/* Avatar with info */}
+      <AvatarWithInfo />
     </div>
   );
 };
