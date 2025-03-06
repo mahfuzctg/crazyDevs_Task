@@ -1,7 +1,9 @@
+import UploadCard from "@/components/card/UploadCard";
+
 const HomePage = () => {
   return (
-    <div className="">
-      <h1>this it home page</h1>
+    <div className="grid grid-cols-2">
+      <UploadCard />
     </div>
   );
 };
