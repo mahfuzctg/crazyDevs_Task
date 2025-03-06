@@ -104,5 +104,24 @@ div {
   padding-bottom: 3px;
   padding-left: 24px;
   border-width: 1px;
-  border-color: #444444;
+}
+
+/* h1 global */
+h1 {
+  font-family: Onest;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 110.00000000000001%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+/* span teg global  */
+span {
+  font-family: Onest;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #868686;
 }
