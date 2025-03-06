@@ -83,7 +83,7 @@ div {
   background: radial-gradient(circle, var(--dot-color) 1px, transparent 1px),
     /* Dotted pattern */ var(--bg-fields-bg, #2b2b2b) url("/assets/Hero.png"); /* Background image */
   width: 1116;
-  height: 508;
+  height: 650px;
   border-radius: 16px;
   padding-top: 40px;
   padding-right: 20px;

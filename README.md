@@ -1,13 +1,80 @@
-# React + Vite
+# Socrates Frontend Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a single-page website built using **ReactJS, Tailwind CSS, and ShadCN**. The UI design was implemented following a **Figma** design.
 
-Currently, two official plugins are available:
+## 🛠 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **ReactJS** - Component-based UI library
+- **Tailwind CSS** - Utility-first styling
+- **ShadCN** - UI components
 
-## Expanding the ESLint configuration
+## 📂 Project Structure
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# crazyDevs_Task
+```
+📦 socrates-frontend
+├── 📂 src
+│   ├── 📂 components  # Reusable UI components
+│   ├── 📂 pages       # Page components
+│   ├── 📂 assets      # Images and static files
+│   ├── 📂 utils       # Helper functions
+│   ├── App.jsx       # Root component
+│   ├── main.jsx      # Entry point
+├── 📜 index.html      # Main HTML file
+├── 📜 package.json    # Dependencies and scripts
+├── 📜 vite.config.js  # Vite configuration
+└── 📜 README.md       # Project documentation
+```
+
+## 📦 Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/mahfuzctg/crazyDevs_Task.git
+   ```
+2. Navigate to the project folder:
+   ```sh
+   cd socrates-frontend
+   ```
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
+
+## 💻 Usage
+
+To start the development server:
+
+```sh
+npm run dev
+```
+
+This will start the server at `http://localhost:5173/` (default Vite port).
+
+## 🛠 Build for Production
+
+To generate a production build:
+
+```sh
+npm run build
+```
+
+The optimized output will be in the `dist/` folder.
+
+## ✨ Customization
+
+- **Tailwind Styles**: Modify `tailwind.config.js` as needed.
+- **ShadCN Components**: Customize UI components in the `components/` directory.
+- **Figma Adjustments**: Ensure consistency with the provided Figma design.
+
+## 🔗 Links
+
+- **Live Site:** [Visit](https://crazy-devps-task.vercel.app/)
+- **GitHub Repository:** [Visit](https://github.com/mahfuzctg/crazyDevs_Task.git)
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+Made with ❤️ using React, Tailwind, and ShadCN.
