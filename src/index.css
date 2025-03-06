@@ -1,7 +1,7 @@
-@import "tailwindcss"; /* Import TailwindCSS for utility-first styling */
+@import "tailwindcss";
 
 /* 
-  🌍 Global Styles 
+  Global Styles 
   Define root variables for consistent theming across the project.
 */
 :root {
@@ -24,7 +24,7 @@
   ); /* Subtle dotted effect in backgrounds */
 }
 
-/* 🌟 Base Styles for the Body */
+/*  Base Styles for the Body */
 body {
   background: var(--bg-frame-bg); /* Set background color */
   color: var(--text-primary); /* Set text color */
@@ -36,21 +36,20 @@ body {
   gap: 12px;
 }
 
-/* 🎨 Buttons */
+/*  Buttons */
 .btn {
   background-color: var(--btn-bg); /* Default button color */
   color: var(--text-primary); /* Text color */
   padding: 10px 16px; /* Padding for size */
   border-radius: 6px; /* Rounded corners */
-  transition: background 0.3s ease; /* Smooth transition on hover */
 }
 
-/* 🔥 Button Hover Effect */
+/*  Button Hover Effect */
 .btn:hover {
   background-color: var(--btn-hover-bg); /* Darker color when hovered */
 }
 
-/* 📦 Cards */
+/*  Cards */
 .card {
   background-color: var(--card-bg); /* Background color */
   padding: 16px; /* Spacing inside the card */
@@ -58,14 +57,14 @@ body {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
 }
 
-/* 📌 Sections */
+/*  Sections */
 .section {
   background-color: var(--section-bg); /* Background color for sections */
   padding: 40px 20px; /* Spacing inside sections */
   border-radius: 8px; /* Rounded corners */
 }
 
-/* 📏 Containers */
+/*  Containers */
 .container {
   background-color: var(--container-bg); /* Background color */
   max-width: 1200px; /* Set maximum width */
@@ -73,17 +72,16 @@ body {
   padding: 20px; /* Padding inside container */
 }
 
-/* 🔳 Generic Div Styling */
+/*  Generic Div Styling */
 div {
   border-radius: 4px; /* Rounded corners */
   padding: 8px; /* Internal spacing */
 }
 
-/* 🎯 Dotted Background with Hero Image */
+/*  Dotted Background with Hero Image */
 .main_dotted_bg {
   background: radial-gradient(circle, var(--dot-color) 1px, transparent 1px),
-    /* Dotted pattern */ var(--bg-fields-bg, #2b2b2b)
-      url("/src/assets/Hero.png"); /* Background image */
+    /* Dotted pattern */ var(--bg-fields-bg, #2b2b2b) url("/assets/Hero.png"); /* Background image */
   width: 1116;
   height: 508;
   border-radius: 16px;

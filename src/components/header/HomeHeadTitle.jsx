@@ -2,7 +2,7 @@ const HomeHeadTitle = () => {
   return (
     <div className="flex items-center ml-40">
       <>
-        <img src="/src/assets/home-head-icon-circle.png" alt="" />
+        <img src="/assets/home-head-icon-circle.png" alt="" />
       </>
       <div className="flex items-center">
         <>

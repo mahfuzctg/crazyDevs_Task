@@ -11,13 +11,13 @@ const Sidebar = () => {
 
       {/* rounded btn */}
       <BtnRounded
-        iconSrc="/src/assets/left-btn-icon-sidebar.png"
+        iconSrc="/assets/left-btn-icon-sidebar.png"
         buttonText="Add Folder"
         border={true}
         borderColor="border-[#454444] "
       />
       <BtnRounded
-        iconSrc="/src/assets/left-btn-icon-sidebar.png"
+        iconSrc="/assets/left-btn-icon-sidebar.png"
         buttonText="Create Chat"
         className="bg-[#454444]"
         border={true}

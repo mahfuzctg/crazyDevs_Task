@@ -8,7 +8,7 @@ const SidebarCard = () => {
         title="Upgrade to Premium"
         description="Make the most of all features!"
         buttonText="Upgrade"
-        iconSrc="/src/assets/left-btn-icon-sidebar.png"
+        iconSrc="/assets/left-btn-icon-sidebar.png"
         border={true}
         borderColor="border-orange-500"
         className="mt-60"

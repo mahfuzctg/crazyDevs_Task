@@ -1,5 +1,5 @@
 const GenericHomeCard = ({
-  iconSrc = "/src/assets/default-icon.png",
+  iconSrc = "/assets/default-icon.png",
   title,
   inputField,
 }) => {

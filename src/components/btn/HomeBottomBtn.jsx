@@ -5,7 +5,7 @@ const HomeBottomBtn = () => {
     <div className="flex items-center justify-center gap-6 w-9/12 mx-auto">
       {/* Start Button */}
       <BtnRounded
-        iconSrc="/src/assets/left-btn-icon-sidebar.png"
+        iconSrc="/assets/left-btn-icon-sidebar.png"
         buttonText="Start"
         className="bg-[#454444] home_bottom_start_btn"
         border={true}
@@ -17,7 +17,7 @@ const HomeBottomBtn = () => {
 
       {/* Start With Demo Dive Button */}
       <BtnRounded
-        iconSrc="/src/assets/icon-deep-dive.png"
+        iconSrc="/assets/icon-deep-dive.png"
         buttonText="Start With Demo Dive"
         className="bg-[#FB9937]  home_bottom_demo_btn"
         border={true}

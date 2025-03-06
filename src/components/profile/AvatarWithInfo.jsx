@@ -6,7 +6,7 @@ const AvatarWithInfo = () => {
       <div className="flex items-center">
         <div>
           <Avatar>
-            <AvatarImage src="/src/assets/User-avatar.png" alt="@shadcn" />
+            <AvatarImage src="/assets/User-avatar.png" alt="@shadcn" />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
         </div>
@@ -16,7 +16,7 @@ const AvatarWithInfo = () => {
       </div>
       <div>
         {" "}
-        <img src="/src/assets/setting-2.png" alt="Search-icon" />
+        <img src="/assets/setting-2.png" alt="Search-icon" />
       </div>
     </div>
   );
