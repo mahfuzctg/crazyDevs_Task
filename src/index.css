@@ -93,3 +93,16 @@ div {
   padding-left: 20px;
   gap: 80px;
 }
+
+.site_header_rounded_btn {
+  width: 256;
+  height: 40;
+  border-radius: 56px;
+  gap: 4px;
+  padding-top: 3px;
+  padding-right: 24px;
+  padding-bottom: 3px;
+  padding-left: 24px;
+  border-width: 1px;
+  border-color: #444444;
+}
