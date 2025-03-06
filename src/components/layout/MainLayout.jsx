@@ -1,4 +1,5 @@
 import HomePage from "@/pages/HomePage";
+import Sidebar from "./Sidebar";
 
 const MainLayout = () => {
   return (
@@ -6,7 +7,7 @@ const MainLayout = () => {
       {/* Sidebar */}
       <div className="w-1/5  text-white p-4">
         {/* Sidebar content goes here */}
-        Sidebar
+        <Sidebar></Sidebar>
       </div>
 
       {/* Main content */}
