@@ -1,7 +1,7 @@
+import SidebarCard from "../card/SidebarCard";
 import SiteLogoAndIcons from "../header/SiteLogoAndIcons";
 import AvatarWithInfo from "../profile/AvatarWithInfo";
 import BtnRounded from "../reuseable/BtnRounded";
-import GenericCard from "../reuseable/GenericCard";
 
 const Sidebar = () => {
   return (
@@ -25,7 +25,7 @@ const Sidebar = () => {
       />
 
       {/* sidebar bottom card */}
-      <GenericCard />
+      <SidebarCard />
 
       {/* Avatar with info */}
       <AvatarWithInfo />

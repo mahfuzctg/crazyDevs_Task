@@ -1,18 +1,24 @@
 import BtnRounded from "./BtnRounded";
 
-const GenericCard = () => {
+const GenericCard = ({
+  title,
+  description,
+  buttonText,
+  iconSrc,
+  border = false,
+  borderColor = "border-gray-300",
+  className = "",
+}) => {
   return (
-    <div>
-      <div className=" mt-60  card">
-        <h1 className="text-md">Upgrade to Premium</h1>
-        <span className="text-sm">Make the most of all features!</span>
-        <BtnRounded
-          iconSrc="/src/assets/left-btn-icon-sidebar.png"
-          buttonText="Upgrade"
-          border={true} // Enable border
-          borderColor="border-orange-500 " // Set the border color to red
-        />
-      </div>
+    <div className={`p-4 rounded-lg shadow-md card ${className}`}>
+      <h1 className="text-md font-semibold">{title}</h1>
+      <span className="text-sm text-gray-600">{description}</span>
+      <BtnRounded
+        iconSrc={iconSrc}
+        buttonText={buttonText}
+        border={border}
+        borderColor={borderColor}
+      />
     </div>
   );
 };
