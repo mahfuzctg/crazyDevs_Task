@@ -1,16 +1,26 @@
 const GenericHomeCard = ({
   iconSrc = "/src/assets/default-icon.png",
   title,
-
-  buttonText,
   inputField,
 }) => {
   return (
-    <div className="flex flex-col items-start justify-center bg-[#242424] text-white p-4 rounded-lg w-full max-w-sm shadow-md">
-      <div className="flex items-center gap-3">
-        <img src={iconSrc} alt="icon" className="w-6 h-6" />
-        <h1 className="text-lg font-semibold">{title}</h1>
+    <div className="flex flex-col mx-auto  upload_card  ">
+      <div className="flex items-center gap-x-2">
+        <img src={iconSrc} alt="icon" className="" />
+        <p>{title}</p>
       </div>
+
+      {inputField ? (
+        <div className="flex items-center w-full bg-gray-500 rounded-md">
+          <input
+            type="text"
+            placeholder="Enter URL"
+            className="w-full bg-transparent text-gray-300 outline-none"
+          />
+        </div>
+      ) : (
+        <></>
+      )}
     </div>
   );
 };
