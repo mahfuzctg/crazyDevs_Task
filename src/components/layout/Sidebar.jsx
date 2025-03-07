@@ -5,31 +5,34 @@ import BtnRounded from "../reuseable/BtnRounded";
 
 const Sidebar = () => {
   return (
-    <>
-      {/* sidebar logo and icons */}
+    <div className="flex flex-col items-center gap-6 p-4 w-full">
+      {/* Sidebar logo and icons */}
       <SiteLogoAndIcons />
 
-      {/* rounded btn */}
-      <BtnRounded
-        iconSrc="/assets/left-btn-icon-sidebar.png"
-        buttonText="Add Folder"
-        border={true}
-        borderColor="border-[#454444] "
-      />
-      <BtnRounded
-        iconSrc="/assets/left-btn-icon-sidebar.png"
-        buttonText="Create Chat"
-        className="bg-[#454444]"
-        border={true}
-        borderColor="border-[#454444] "
-      />
+      {/* Rounded buttons with hover effects */}
+      <div className="flex flex-col gap-4 w-full">
+        <BtnRounded
+          iconSrc="/assets/left-btn-icon-sidebar.png"
+          buttonText="Add Folder"
+          border={true}
+          borderColor="border-[#454444]"
+          className="transition-all duration-300 ease-in-out hover:bg-[#565656] hover:text-white active:scale-95"
+        />
+        <BtnRounded
+          iconSrc="/assets/left-btn-icon-sidebar.png"
+          buttonText="Create Chat"
+          className="bg-[#454444] transition-all duration-300 ease-in-out hover:bg-[#565656] hover:text-white active:scale-95"
+          border={true}
+          borderColor="border-[#454444]"
+        />
+      </div>
 
-      {/* sidebar bottom card */}
+      {/* Sidebar bottom card */}
       <SidebarCard />
 
       {/* Avatar with info */}
       <AvatarWithInfo />
-    </>
+    </div>
   );
 };
 

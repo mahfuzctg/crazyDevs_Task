@@ -9,7 +9,7 @@ const HomeTitle = () => {
           <img
             src="/assets/Home-Head-App-Icon.png"
             alt="Home-Head-App-Icon"
-            className="w-[70px] h-[70px] rounded-lg"
+            className="head_title_icon"
           />
         </div>
         <div>

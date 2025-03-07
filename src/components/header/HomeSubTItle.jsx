@@ -1,6 +1,6 @@
 const HomeSubTItle = () => {
   return (
-    <div className="ml-62 -mt-5">
+    <div className="w-[703px] h-[36] mx-auto">
       {/* Home Sub title */}
       <span>
         Your files will not be stored on our servers and no AI models will be

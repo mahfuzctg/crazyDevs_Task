@@ -6,6 +6,7 @@ const BtnRounded = ({
   className = "",
   border = false,
   borderColor = "",
+  onClick, // Added onClick prop
 }) => {
   return (
     <div>
@@ -15,7 +16,7 @@ const BtnRounded = ({
         }`}
       >
         {iconSrc && <img src={iconSrc} alt="icon" />}
-        {buttonText && <Button>{buttonText}</Button>}
+        {buttonText && <Button onClick={onClick}>{buttonText}</Button>}
       </div>
     </div>
   );
