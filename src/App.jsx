@@ -2,7 +2,7 @@ import MainLayout from "./components/layout/MainLayout.jsx";
 
 function App() {
   return (
-    <div className="  mx-auto bg-[#242424] ">
+    <div className="w-[1440px] h-[900px] p-[16px] g-[12px] bg-[#242424] mx-auto my-auto  ">
       <MainLayout></MainLayout>
     </div>
   );

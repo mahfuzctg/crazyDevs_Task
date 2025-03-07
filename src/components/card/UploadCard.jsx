@@ -2,7 +2,7 @@ import GenericHomeCard from "../reuseable/GenericHomeCard";
 
 const UploadCard = () => {
   return (
-    <div className="grid grid-cols-2 gap-4   ">
+    <div className="grid grid-cols-2 gap-2 my-8  ">
       <GenericHomeCard
         iconSrc="/assets/upload-drag-img.png"
         title="Drag & drop local files here,

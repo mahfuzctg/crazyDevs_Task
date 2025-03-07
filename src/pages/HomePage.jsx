@@ -7,12 +7,12 @@ import Source from "@/components/source/Source";
 
 const HomePage = () => {
   return (
-    <>
+    <div>
       {/* Home Head title here */}
       <>
         <HomeHeadTitle />
       </>
-      <div className="home_main_box">
+      <div className=" bg-amber-200 ">
         {/* Home title is here */}
 
         <HomeTitle />
@@ -27,7 +27,7 @@ const HomePage = () => {
         {/* Home start or demo btn */}
         <HomeBottomBtn />
       </div>
-    </>
+    </div>
   );
 };
 

@@ -2,11 +2,11 @@ import BtnRounded from "../reuseable/BtnRounded";
 
 const HomeBottomBtn = () => {
   return (
-    <div className="flex items-center justify-center gap-6 w-9/12 mx-auto">
+    <div className="flex items-center justify-center gap-6  fixed bottom-32 ml-44  ">
       {/* Start Button */}
       <BtnRounded
         buttonText="Start"
-        className="bg-[#454444] home_bottom_start_btn transition-all duration-200 ease-in-out 
+        className="bg-[#454444]  transition-all duration-200 ease-in-out 
                    hover:bg-[#FB9937] active:scale-95"
         border={true}
         borderColor="border-[#FB9937]"

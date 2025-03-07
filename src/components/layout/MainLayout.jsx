@@ -11,7 +11,7 @@ const MainLayout = () => {
       </div>
 
       {/* Main content */}
-      <div className="w-[75%]  main_dotted_bg">
+      <div className="main_dotted_bg my-auto w-[1116px] h-[868px]">
         {/* Main content goes here */}
         <HomePage></HomePage>
       </div>

@@ -1,7 +1,7 @@
 const HomeTitle = () => {
   return (
     <>
-      <div className="flex items-center ml-40">
+      <div className="flex items-center ml-40 mt-10 ">
         <div>
           <h1>Add Files to</h1>
         </div>
