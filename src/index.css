@@ -32,6 +32,9 @@ body {
   border-radius: 32px;
   padding: 16px;
   gap: 12px;
+
+  /* Fix scrolling */
+  overflow: hidden;
 }
 h1 {
   font-family: Onest;
