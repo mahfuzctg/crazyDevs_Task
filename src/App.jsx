@@ -2,7 +2,7 @@ import MainLayout from "./components/layout/MainLayout.jsx";
 
 function App() {
   return (
-    <div className=" bg-[#242424] ">
+    <div className="  mx-auto bg-[#242424] ">
       <MainLayout></MainLayout>
     </div>
   );

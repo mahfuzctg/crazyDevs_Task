@@ -5,7 +5,7 @@ const BtnRounded = ({
   buttonText,
   className = "",
   border = false,
-  borderColor = "", // Default border color
+  borderColor = "",
 }) => {
   return (
     <div>
@@ -14,8 +14,8 @@ const BtnRounded = ({
           border ? `border ${borderColor}` : ""
         }`}
       >
-        <img src={iconSrc} alt="icon" />
-        <Button>{buttonText}</Button>
+        {iconSrc && <img src={iconSrc} alt="icon" />}
+        {buttonText && <Button>{buttonText}</Button>}
       </div>
     </div>
   );

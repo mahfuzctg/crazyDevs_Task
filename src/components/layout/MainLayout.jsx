@@ -3,15 +3,15 @@ import Sidebar from "./Sidebar";
 
 const MainLayout = () => {
   return (
-    <div className="flex ">
+    <div className="flex">
       {/* Sidebar */}
-      <div className="w-[25%]">
+      <div className=" side_layout">
         {/* Sidebar content goes here */}
         <Sidebar></Sidebar>
       </div>
 
       {/* Main content */}
-      <div className="  main_dotted_bg">
+      <div className="w-[75%]  main_dotted_bg">
         {/* Main content goes here */}
         <HomePage></HomePage>
       </div>

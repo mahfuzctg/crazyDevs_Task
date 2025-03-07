@@ -12,19 +12,21 @@ const HomePage = () => {
       <div>
         <HomeHeadTitle />
       </div>
-      {/* Home title is here */}
+      <div className="home_main_box">
+        {/* Home title is here */}
 
-      <HomeTitle />
-      {/* Home Sub Title */}
-      <HomeSubTItle />
-      {/* Home upload cards here */}
-      <>
-        <UploadCard />
-      </>
-      {/* Source  */}
-      <Source></Source>
-      {/* Home start or demo btn */}
-      <HomeBottomBtn />
+        <HomeTitle />
+        {/* Home Sub Title */}
+        <HomeSubTItle />
+        {/* Home upload cards here */}
+        <>
+          <UploadCard />
+        </>
+        {/* Source  */}
+        <Source></Source>
+        {/* Home start or demo btn */}
+        <HomeBottomBtn />
+      </div>
     </div>
   );
 };

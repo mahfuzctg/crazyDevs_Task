@@ -5,9 +5,9 @@ const GenericHomeCard = ({
 }) => {
   return (
     <div className="flex  w-9/12 mx-auto upload_card  ">
-      <div className="flex items-center gap-x-2">
+      <div className="flex items-center gap-x-2 text-start">
         <img src={iconSrc} alt="icon" className="" />
-        <h2>{title}</h2>
+        <div className="title">{title}</div>
       </div>
 
       {inputField ? (
