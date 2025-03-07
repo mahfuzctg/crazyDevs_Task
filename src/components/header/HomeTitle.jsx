@@ -3,7 +3,7 @@ const HomeTitle = () => {
     <>
       <div className="flex items-center ml-40">
         <div>
-          <h2>Add Files to</h2>
+          <h1>Add Files to</h1>
         </div>
         <div>
           <img
@@ -13,7 +13,7 @@ const HomeTitle = () => {
           />
         </div>
         <div>
-          <h2>Cloud Chat</h2>
+          <h1>Cloud Chat</h1>
         </div>
       </div>
     </>

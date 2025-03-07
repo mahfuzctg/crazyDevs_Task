@@ -11,7 +11,7 @@ const AvatarWithInfo = () => {
           </Avatar>
         </div>
         <div>
-          <h1>Jessica Mills</h1>
+          <h6>Jessica Mills</h6>
         </div>
       </div>
       <div>

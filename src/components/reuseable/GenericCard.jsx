@@ -11,7 +11,7 @@ const GenericCard = ({
 }) => {
   return (
     <div className={`p-4 rounded-lg shadow-md card ${className}`}>
-      <h1 className="text-md font-semibold">{title}</h1>
+      <h3 className="text-md font-semibold">{title}</h3>
       <span className="text-sm text-gray-600">{description}</span>
       <BtnRounded
         iconSrc={iconSrc}
