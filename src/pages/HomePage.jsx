@@ -12,7 +12,7 @@ const HomePage = () => {
       <>
         <HomeHeadTitle />
       </>
-      <div className=" bg-amber-200 ">
+      <>
         {/* Home title is here */}
 
         <HomeTitle />
@@ -26,7 +26,7 @@ const HomePage = () => {
         <Source></Source>
         {/* Home start or demo btn */}
         <HomeBottomBtn />
-      </div>
+      </>
     </div>
   );
 };
