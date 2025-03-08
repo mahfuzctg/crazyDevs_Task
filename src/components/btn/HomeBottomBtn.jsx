@@ -6,7 +6,7 @@ const HomeBottomBtn = () => {
       {/* Start Button */}
       <BtnRounded
         buttonText="Start"
-        className="bg-[#454444]  transition-all duration-200 ease-in-out 
+        className="bg-[#454444] home_bottom_start_btn transition-all duration-200 ease-in-out 
                    hover:bg-[#FB9937] active:scale-95"
         border={true}
         borderColor="border-[#FB9937]"

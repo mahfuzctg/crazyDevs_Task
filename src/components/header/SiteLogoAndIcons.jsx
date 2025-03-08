@@ -4,11 +4,11 @@ import { Input } from "../ui/input";
 
 const SiteLogoAndIcons = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false); // Sidebar hidden by default
   const [searchQuery, setSearchQuery] = useState("");
 
   return (
-    <div className="flex w-full justify-between items-center">
+    <div className="flex w-full justify-between items-center relative">
       {/* Logo Section */}
       <div className="flex gap-2 items-center ml-3">
         <img
@@ -26,14 +26,15 @@ const SiteLogoAndIcons = () => {
       {/* Search & Icons Section */}
       <div className="flex gap-2 items-center">
         {/* Search Input Toggle */}
-        {isSearchOpen && (
+        {isSearchOpen ? (
           <div className="flex items-center gap-2 bg-[#2B2B2B] rounded-md px-2">
             <Input
               type="text"
               placeholder="Search..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-24"
+              className="w-24 text-white bg-transparent"
+              autoFocus
             />
             <Button
               variant="ghost"
@@ -48,10 +49,7 @@ const SiteLogoAndIcons = () => {
               />
             </Button>
           </div>
-        )}
-
-        {/* Search Toggle Button */}
-        {!isSearchOpen && (
+        ) : (
           <Button
             variant="ghost"
             size="icon"
@@ -86,11 +84,13 @@ const SiteLogoAndIcons = () => {
       </div>
 
       {/* Sidebar */}
-      {isSidebarOpen && (
-        <div className="fixed top-0 left-10 bottom-5 w-[10%] my-auto  h-[100%] bg-[#fefefe] text-white p-4 shadow-lg transition-all">
-          <p>Side bar</p>
-        </div>
-      )}
+      <div
+        className={`fixed top-0 left-0 h-full w-[200px] bg-[#fefefe] shadow-lg p-4 transition-transform ${
+          isSidebarOpen ? "translate-x-0" : "-translate-x-full"
+        }`}
+      >
+        <p className="text-black">Sidebar</p>
+      </div>
     </div>
   );
 };

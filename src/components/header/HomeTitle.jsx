@@ -1,7 +1,7 @@
 const HomeTitle = () => {
   return (
     <>
-      <div className="flex items-center ml-40 mt-10 ">
+      <div className="flex items-center justify-center mt-10 mb-4 gap-2">
         <div>
           <h1>Add Files to</h1>
         </div>
