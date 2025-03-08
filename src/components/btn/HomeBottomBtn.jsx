@@ -30,7 +30,7 @@ const HomeBottomBtn = () => {
         />
       </div>
 
-      <div className="flex justify-end  -mt-6">
+      <div className="flex justify-end  -mt-8">
         {" "}
         <DeepDive />
       </div>
