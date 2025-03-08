@@ -2,7 +2,7 @@ import GenericCard from "../reuseable/GenericCard";
 
 const SidebarCard = () => {
   return (
-    <div className="mx-auto">
+    <div className=" mt-24">
       {/* Card for Premium Upgrade */}
       <GenericCard
         title="Upgrade to Premium"
@@ -11,7 +11,7 @@ const SidebarCard = () => {
         iconSrc="/assets/left-btn-icon-sidebar.png"
         border={true}
         borderColor="border-orange-500"
-        className="mt-60 upgrade_plan"
+        className="mt-60 "
       />
     </div>
   );

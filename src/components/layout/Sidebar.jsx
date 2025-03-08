@@ -1,3 +1,4 @@
+import FlowAi from "../card/FlowAi";
 import SidebarCard from "../card/SidebarCard";
 import SiteLogoAndIcons from "../header/SiteLogoAndIcons";
 import AvatarWithInfo from "../profile/AvatarWithInfo";
@@ -5,7 +6,7 @@ import BtnRounded from "../reuseable/BtnRounded";
 
 const Sidebar = () => {
   return (
-    <div className="flex flex-col items-center gap-6 py-4 w-[280px] h-[868px]">
+    <div className="flex flex-col   items-center gap-6 py-4 w-[280px] h-[868px]">
       {/* Sidebar logo and icons */}
       <SiteLogoAndIcons />
 
@@ -29,7 +30,8 @@ const Sidebar = () => {
 
       {/* Sidebar bottom card */}
       <SidebarCard />
-
+      {/* Flow AI  */}
+      <FlowAi />
       {/* Avatar with info */}
       <AvatarWithInfo />
     </div>

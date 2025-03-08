@@ -5,10 +5,7 @@ const MainLayout = () => {
   return (
     <div className="flex justify-around">
       {/* Sidebar */}
-      <>
-        {/* Sidebar content goes here */}
-        <Sidebar></Sidebar>
-      </>
+      <Sidebar></Sidebar>
 
       {/* Main content */}
       <div className="main_dotted_bg w-[1116px] h-[868px] ">

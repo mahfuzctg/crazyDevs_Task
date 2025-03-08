@@ -87,8 +87,8 @@ const SiteLogoAndIcons = () => {
 
       {/* Sidebar */}
       {isSidebarOpen && (
-        <div className="fixed top-0 left-0 w-20 h-full bg-[#242424] text-white p-4 shadow-lg transition-all">
-          <p>Sidebar</p>
+        <div className="fixed top-0 left-10 bottom-5 w-[10%] my-auto  h-[100%] bg-[#fefefe] text-white p-4 shadow-lg transition-all">
+          <p>Side bar</p>
         </div>
       )}
     </div>
