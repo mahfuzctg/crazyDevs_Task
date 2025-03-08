@@ -2,7 +2,7 @@ import BtnRounded from "../reuseable/BtnRounded";
 
 const HomeBottomBtn = () => {
   return (
-    <div className="flex items-center justify-center gap-6  fixed bottom-32 ml-44  ">
+    <div className="flex items-center justify-center gap-6 mt-16   ">
       {/* Start Button */}
       <BtnRounded
         buttonText="Start"
