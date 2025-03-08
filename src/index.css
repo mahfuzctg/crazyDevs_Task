@@ -81,7 +81,7 @@ h6 {
   line-height: 100%;
   letter-spacing: 0%;
   vertical-align: middle;
-  color: #ffffff;
+  color: #ffffffd0;
 }
 
 p {
@@ -250,4 +250,21 @@ span {
   border-radius: 12px;
   gap: 12px;
   padding: 16px;
+}
+
+.deep_dive_box {
+  width: 226;
+  height: 94;
+  border-radius: 20px;
+  gap: 8px;
+  padding: 12px;
+  top: 771px;
+  left: 844px;
+}
+.deep_dive_box h6 {
+  font-family: Onest;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 1%;
 }
