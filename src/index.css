@@ -237,9 +237,17 @@ span {
   width: 820;
   height: 62;
   border-radius: 34px;
+  padding: 16px;
   gap: 6px;
 }
-
+.source_box_right {
+  border-radius: 20px;
+  gap: 14px;
+  padding-top: 7px;
+  padding-right: 7px;
+  padding-bottom: 7px;
+  padding-left: 12px;
+}
 .upgrade_plan {
   width: 256;
   height: 120;

@@ -4,7 +4,7 @@ import { Input } from "../ui/input";
 
 const SiteLogoAndIcons = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true); // Sidebar state
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const [searchQuery, setSearchQuery] = useState("");
 
   return (
@@ -25,7 +25,8 @@ const SiteLogoAndIcons = () => {
 
       {/* Search & Icons Section */}
       <div className="flex gap-2 items-center">
-        {isSearchOpen ? (
+        {/* Search Input Toggle */}
+        {isSearchOpen && (
           <div className="flex items-center gap-2 bg-[#2B2B2B] rounded-md px-2">
             <Input
               type="text"
@@ -33,20 +34,34 @@ const SiteLogoAndIcons = () => {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-24"
-              autoFocus
             />
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => setIsSearchOpen(false)} // Hide search on click
+              className="hover:bg-gray-300 w-[28px] h-[28px]"
+            >
+              <img
+                src="/assets/source/icon-close-small.png"
+                alt="Close-search-icon"
+                className="w-[20px] h-[20px]"
+              />
+            </Button>
           </div>
-        ) : (
+        )}
+
+        {/* Search Toggle Button */}
+        {!isSearchOpen && (
           <Button
             variant="ghost"
             size="icon"
             onClick={() => setIsSearchOpen(true)}
-            className="hover:bg-gray-200 w-[28px] h-[28px]  transition-all "
+            className="hover:bg-gray-200 w-[28px] h-[28px] transition-all"
           >
             <img
               src="/assets/icon-search.png"
               alt="Search-icon"
-              className="w-[24px] h-[24px] "
+              className="w-[24px] h-[24px]"
             />
           </Button>
         )}
@@ -61,18 +76,18 @@ const SiteLogoAndIcons = () => {
           <img
             src={
               isSidebarOpen
-                ? "/assets/icon-sidebar-left.png"
+                ? "/assets/source/icon-close-small.png"
                 : "/assets/icon-sidebar-left.png"
             }
             alt="Sidebar-icon"
-            className="w-[24px] h-[24px"
+            className="w-[24px] h-[24px]"
           />
         </Button>
       </div>
 
-      {/*  sidebar logic) */}
+      {/* Sidebar */}
       {isSidebarOpen && (
-        <div className="fixed top-0 left-0 w-32 h-full bg-[#242424] text-white p-4 shadow-lg transition-all">
+        <div className="fixed top-0 left-0 w-20 h-full bg-[#242424] text-white p-4 shadow-lg transition-all">
           <p>Sidebar</p>
         </div>
       )}
