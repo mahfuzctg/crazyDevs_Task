@@ -8,6 +8,7 @@ const GenericCard = ({
   border = false,
   borderColor = "border-gray-300",
   className = "",
+  buttonLink = "#", // Add a default buttonLink prop
 }) => {
   return (
     <div className={`p-4 rounded-lg shadow-md card ${className}`}>
@@ -18,6 +19,7 @@ const GenericCard = ({
         buttonText={buttonText}
         border={border}
         borderColor={borderColor}
+        buttonLink={buttonLink}
       />
     </div>
   );

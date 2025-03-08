@@ -16,7 +16,7 @@ const BtnRounded = ({
         }`}
       >
         {iconSrc && <img src={iconSrc} alt="icon" />}
-        {buttonText && <Button onClick={onClick}>{buttonText}</Button>}
+        {<Button onClick={onClick}>{buttonText}</Button>}
       </div>
     </div>
   );

@@ -2,10 +2,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&display=swap");
 
-/* 
-  Global Styles 
-*/
-
 :root {
   --bg-frame-bg: #242424; /* Main background color */
   --text-primary: #ffffff; /* Primary text color (white) */
@@ -30,7 +26,6 @@ body {
   vertical-align: middle;
   color: var(--text-primary);
   background: #1e1e1e;
-  overflow: hidden; /* Fix scrolling */
 }
 
 /* Headings */

@@ -8,7 +8,7 @@ const MainLayout = () => {
       <Sidebar></Sidebar>
 
       {/* Main content */}
-      <div className="main_dotted_bg w-[1116px] h-[868px] ">
+      <div className="main_dotted_bg w-[1116px] h-auto ">
         {/* Main content goes here */}
         <HomePage></HomePage>
       </div>
